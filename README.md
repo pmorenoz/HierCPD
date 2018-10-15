@@ -2,12 +2,12 @@
 
 This repository contains the implementation of our Hierarchical Change-Point Detection (HierCPD) model that is fully written in Python. This model addresses the problem of change-point detection on sequences of **high-dimensional** and **heterogeneous** observations (i.e. different statistical data types) with an unknown temporal structure.
 
-Please, if you use this code, cite the following paper:
+Please, if you use this code, cite the following [paper](https://arxiv.org/abs/1809.04197):
 ```
 @article{MorenoRamirezArtes18,
   title={Change-Point Detection on Hierarchical Circadian Models},
   author={Pablo Moreno-Mu\~noz, David Ram\'irez and Antonio Art\'es-Rodr\'iguez},
-  journal={arXiv preprint arXiv:XXXX.XXXX},
+  journal={arXiv preprint arXiv:1809.04197},
   year={2018}
 }
 ```
@@ -15,7 +15,7 @@ Please, if you use this code, cite the following paper:
 The repository is divided in two sections that correspond to the two principal contributions of our work: **(i) Hierarchical Detector** and **(ii) Heterogeneous Circadian Mixture Models**.
 
 # Hierarchical Detector
-This is a novel probabilistic extension of the widely known Bayesian Online Change-Point Detection (BOCPD) algorithm ([link](http://hips.seas.harvard.edu/content/bayesian-online-changepoint-detection)). We extend the BOCPD method to handle any type of latent variable model. In particular, it is able to detect by directly modeling complex observations from their latent representation embedded in a lower dimensional manifold. You may find a notebook demo of the detector performance within a latent class model.
+This is a novel probabilistic extension of the widely known Bayesian Online Change-Point Detection (BOCPD) algorithm. We extend the BOCPD method to handle any type of latent variable model. In particular, it is able to detect by directly modeling complex observations from their latent representation embedded in a lower dimensional manifold. You may find a notebook demo of the detector performance within a latent class model.
 
 **Graphical model:** Representation of the hierarchical change-point detector. The detection is performed exclusively on the blue region. Additionally, the green region corresponds to the embedded circadian model (see below).
 ![graphical_model](tmp/graphical_model.png)
